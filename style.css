@@ -1,0 +1,31 @@
+.heading{
+   text-decoration: underline;
+}
+
+
+li > button >  a{
+    text-decoration: none;
+    color: white;
+       
+}
+
+
+
+button > a::after{
+    content: " ";
+    display: block;
+    position: relative;
+    overflow: hidden !important;
+    height: 4px;
+    width: 100%;
+    background-color: gold;
+    transform:  scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+button > a:hover::after{
+    transform: scaleX(1);
+    overflow: hidden !important;
+  
+}
