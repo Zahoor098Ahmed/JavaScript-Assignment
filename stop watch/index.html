@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stopwatch</title>
+<style>
+    #stopwatch {
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+<h1>Stop Watch</h1>
+<div id="stopwatch">00:00:00</div>
+<button onclick="startStopwatch()">Start</button>
+<button onclick="stopStopwatch()">Stop</button>
+<button onclick="resetStopwatch()">Reset</button>
+
+<script>
+let startTime, intervalId;
+
+function startStopwatch() {
+    if (!intervalId) {
+        startTime = new Date().getTime();
+        intervalId = setInterval(updateStopwatch, 1000);
+    }
+}
+
+function stopStopwatch() {
+    clearInterval(intervalId);
+    intervalId = null;
+}
+
+function resetStopwatch() {
+    stopStopwatch();
+    document.getElementById("stopwatch").textContent = "00:00:00";
+}
+
+function updateStopwatch() {
+    let currentTime = new Date().getTime();
+    let elapsedTime = currentTime - startTime;
+    
+    let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+    let minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+    hours = padZero(hours);
+    minutes = padZero(minutes);
+    seconds = padZero(seconds);
+
+    document.getElementById("stopwatch").textContent = hours + ":" + minutes + ":" + seconds;
+}
+
+function padZero(num) {
+    return (num < 10 ? "0" : "") + num;
+}
+</script>
+
+</body>
+</html>
