@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1> Quick Stop Game</h1> 
+    <ol>
+        <h3>Rules</h3>
+        <li>You have click  before 5000</li>
+        <li>If number matches your number then you will win the match.</li>
+        <li>If it does not match then you are loss the match.</li>
+    </ol>
+    <h1 id="number">00</h1>
+    <div>
+        <input placeholder="Add Your number" id="user_input" />
+    </div>
+    <h4 id="result">-</h4>
+   <span>
+
+       <button id="start_btn" onclick="start()">start</button>
+       <button onclick="stop()">stop</button>
+   </span>
+    <script src="app.js"></script>
+</body>
+</html>
