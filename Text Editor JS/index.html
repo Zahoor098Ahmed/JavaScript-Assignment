@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Editor</title>
+<link rel="stylesheet" href="style.css">
+<!-- Add Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- <input type="text" id="textInput" placeholder="Type your text here..."> -->
+    <textarea  type="text" id="textInput" placeholder="Type your text here..."></textarea>
+    <div id="textStylingBtns">
+        <!-- Font Awesome icons as buttons -->
+        <button onclick="boldText()"><i class="fas fa-bold"></i></button>
+        <button onclick="italicText()"><i class="fas fa-italic"></i></button>
+        <button onclick="changeFontFamily()"><i class="fas fa-font"></i></button>
+        <button onclick="underlineText()"><i class="fas fa-underline"></i></button>
+        <button onclick="changeFontSize()"><i class="fas fa-text-height"></i></button>
+        <button onclick="changeTextColor()"><i class="fas fa-paint-brush"></i></button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
