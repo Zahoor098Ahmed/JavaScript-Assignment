@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+    <link href="https://unkpg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <h1>Weather</h1>
+                <div class="Weather_input">
+                        <input type="text" name="city" id="city_input" placeholder="Enter the  city name">
+                        <button class="button" id="searchbtn">
+                           <i class="fa-regular fa-search"></i> Search
+                        </button>
+                        <button class="button" id="locationbtn">
+                           <i class="fa-solid fa-location-crosshairs"></i> Current Location
+                        </button>
+               </div>
+       </div>
+     <div class="weather-data">
+             <div class="weather-left">
+                 <div class="card">
+                    <div class="current-weather">
+                          <div class="details">
+                              <p>Now</p>
+                              <h2>___&deg;C</h2>
+                              <p>______</p>
+                          </div>
+                          <div class="Weather-icon">
+                              <img src="https://openweathermap.org/img/wn/04d@2x.png"
+                              alt="">
+                          </div>
+                 </div>
+                 <hr>
+                 <div class="card-footer">
+                          <p><i class="fa-light fa-calendar"></i>_______</p>
+                          <p><i class="fa-light fa-location-dot"></i>_______</p>
+                   </div>
+                </div>
+                <div class="card">
+                        <h2>5 Days Forecast</h2>
+                        <div class="day-forecast">
+                            <div class="forecast-item">
+                                <div class="icon-wrapper">
+                                    <img src="https://openweathermap.org/img/wn/02d.png"
+                                    alt="">
+                                    <span>___&deg;C</span>
+                                 </div>
+                                <p>______</p>
+                                <p>______</p>
+                            </div>
+                        </div>
+                        <div class="day-forecast">
+                            <div class="forecast-item">
+                                <div class="icon-wrapper">
+                                    <img src="https://openweathermap.org/img/wn/02d.png"
+                                    alt="">
+                                    <span>___&deg;C</span>
+                                 </div>
+                                <p>______</p>
+                                <p>______</p>
+                            </div>
+                        </div>
+                        <div class="day-forecast">
+                            <div class="forecast-item">
+                                <div class="icon-wrapper">
+                                    <img src="https://openweathermap.org/img/wn/02d.png"
+                                    alt="">
+                                    <span>___&deg;C</span>
+                                 </div>
+                                <p>______</p>
+                                <p>______</p>
+                            </div>
+                        </div>
+                        <div class="day-forecast">
+                            <div class="forecast-item">
+                                <div class="icon-wrapper">
+                                    <img src="https://openweathermap.org/img/wn/02d.png"
+                                    alt="">
+                                    <span>___&deg;C</span>
+                                 </div>
+                                <p>______</p>
+                                <p>______</p>
+                            </div>
+                        </div>
+                        <div class="day-forecast">
+                            <div class="forecast-item">
+                                <div class="icon-wrapper">
+                                    <img src="https://openweathermap.org/img/wn/02d.png"
+                                    alt="">
+                                    <span>___&deg;C</span>
+                                 </div>
+                                <p>______</p>
+                                <p>______</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
