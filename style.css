@@ -1,56 +1,35 @@
 body {
     background-image: url("https://media.licdn.com/dms/image/D4D12AQFQQwy3Fo_6OA/article-cover_image-shrink_720_1280/0/1695123612065?e=2147483647&v=beta&t=DBsXihNE3uTDYyhV2bOT2PxMEXZmtJG8hdflr3wyfxc");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
 }
-
+.heading h1, .heading h3 {
+    text-shadow: 2px 2px 4px #000000;
+}
 .box {
-    background-color: rgba(255, 255, 255, 0.9);
+    background: ghostwhite; /* Green background */
+    border: 1px solid ghostwhite; /* Darker green border */
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background: ; /* Slightly darker green on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .box a {
-    color: #212529;
+    color: black; /* White text */
     text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
     font-weight: bold;
 }
-
 .box a:hover {
-    color: #ffc107;
-}
-
-
-@media screen and (max-width:500px){
-    .switch{
-        justify-content: center !important;
-    }
-    
-}
-
-@media screen and (max-width:400px){
-    .switch{
-        justify-content: center !important;
-    }
-    
-}
-
-@media screen and (max-width:350px){
-    .switch{
-        justify-content: center !important;
-    }
-    
-}
-
-@media screen and (max-width:100px){
-    .switch{
-        justify-content: center !important;
-    }
-    
+    color: black; /* Gold text on hover */
 }
