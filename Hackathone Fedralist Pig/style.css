@@ -1,0 +1,277 @@
+body{
+    background-color: #ffd700;
+}
+
+.logo{
+    filter: grayscale(1) brightness(0);
+    
+}
+
+.navbar{
+    background-color:  #ffd700;
+}
+
+.nav-btn > .btn:hover{
+    background-color: black !important;
+    color: #ffd700 !important;
+}
+
+.carousel-item > img{
+    height: 600px !important;
+    background-color: #000 !important;
+    
+
+
+    
+}
+.carousel-caption > h1{
+    font-size: 4.5rem;
+
+    
+    
+
+}
+
+.carousel-caption{
+    display: flexbox;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+
+li > a::after{
+    content: " ";
+    display: block;
+    position: relative;
+    overflow: hidden !important;
+    height: 4px;   
+    width: auto;
+    background-color: black;
+    transform:  scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+li > a:hover::after{
+    transform: scaleX(1);
+    
+  
+}
+
+@media (max-width:900px){
+    .carousel-item > img{
+        height: 450px !important;
+    }
+
+}
+
+@media (max-width:600px){
+    .carousel-item > img{
+        height: 350px !important;
+    }
+    .carousel-caption > h1{
+        font-size: 27.856px;
+    
+    }
+   
+}
+
+li{
+  list-style-type: none;
+    
+}
+
+
+ .caption-btn > .btn:hover{
+    background-color: #ffd700 !important;
+    color: black !important;
+    overflow: hidden !important;
+}
+
+
+
+.card-body > .btn:hover{
+    background-color: black !important;
+    color: #ffd700 !important;
+}
+
+
+.parent-card{
+    background-color: #ffd700 !important;
+}
+
+.img{
+    height: 310px;
+    width: 100%;
+}
+
+.manu{
+    width: 100% !important;
+    height: 100%;
+   
+    
+}
+
+.manu-2{
+    width: 100% !important;
+    height: 100%;
+   
+   
+
+    
+}
+
+.card-2{
+    background-color: #ffd700 !important; 
+}
+
+.card-2 > .card-title{
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+  
+  
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   min-height: 100vh;
+   display: block;
+   align-items: center;
+   justify-content: center;
+}
+.site-footer {
+   background-color: black;
+   padding: 45px 0 20px;
+   font-size: 15px;
+   line-height: 24px;
+   color: #ffd700;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.site-footer hr {
+   border-top-color: white;
+   opacity: 0.5;
+}
+.site-footer hr.small {
+   margin: 20px 0;
+}
+.site-footer h3 {
+   color: #ffd700;
+   margin-top: 5px;
+   
+}
+.site-footer a {
+   color: #ffd700;
+   text-decoration: none;
+}
+.site-footer a:hover {
+   color: #ffd700;
+   text-decoration: none;
+}
+.footer-links {
+   padding-left: 0;
+   list-style: none;
+}
+.footer-links li {
+   display: block;
+}
+.footer-links a {
+   color: #ffd700;
+}
+.footer-links .foo-link:active,
+.footer-links .foo-link:focus,
+.footer-links .foo-link:hover {
+   color: #ffd700;
+   text-decoration: none;
+   overflow: hidden !important;
+}
+.site-footer .social-icons {
+   text-align: right;
+}
+.site-footer .social-icons a {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   margin-left: 6px;
+   margin-right: 0;
+   border-radius: 100%;
+  
+}
+.copyright-text {
+   margin: 0;
+}
+@media (max-width: 1600px){
+    .card-2-mobile{
+        display: none;
+      }
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+       margin-bottom: 30px;
+  }
+  .parent-card-2{
+    font-size: medium;
+  }
+  .card-2-mobile{
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+      padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+      text-align: center;
+  }
+  .parent-card-2{
+    font-size: medium;
+  }
+  .card-2-desktop{
+    display: none;
+  }
+  .card-2-mobile{
+    display: contents;
+  }
+   
+    
+
+}
+  
+
+.social-icons {
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
+}
+.social-icons li {
+   display: inline-block;
+   margin-bottom: 4px;
+}
+.social-icons a {
+   
+   font-size: 16px;
+   display: inline-block;
+   line-height: 44px;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   margin-right: 8px;
+   border-radius: 100%;
+   overflow: hidden !important;
+   
+}
+
+
+
+
+.name{
+    color: #ffd700;
+}

@@ -1,29 +1,45 @@
+<<<<<<< HEAD
 /* .heading{
    text-decoration: underline;
+=======
+body {
+    background-image: url("https://media.licdn.com/dms/image/D4D12AQFQQwy3Fo_6OA/article-cover_image-shrink_720_1280/0/1695123612065?e=2147483647&v=beta&t=DBsXihNE3uTDYyhV2bOT2PxMEXZmtJG8hdflr3wyfxc");
+>>>>>>> 5dbbdae3ffed20a0be98dc5f378ec7b69889317f
 }
 
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-li > button >  a{
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box a {
+    color: #212529;
     text-decoration: none;
-    color: white;
-       
+    font-weight: bold;
+}
+
+.box a:hover {
+    color: #ffc107;
 }
 
 
-
-button > a::after{
-    content: " ";
-    display: block;
-    position: relative;
-    overflow: hidden !important;
-    height: 4px;
-    width: 100%;
-    background-color: gold;
-    transform:  scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
+@media screen and (max-width:500px){
+    .switch{
+        justify-content: center !important;
+    }
+    
 }
 
+<<<<<<< HEAD
 button > a:hover::after{
     transform: scaleX(1);
     overflow: hidden !important;
@@ -138,4 +154,25 @@ body {
     color: #fff;
     margin-top: 10px;
     text-align: center;
+=======
+@media screen and (max-width:400px){
+    .switch{
+        justify-content: center !important;
+    }
+    
+>>>>>>> 5dbbdae3ffed20a0be98dc5f378ec7b69889317f
+}
+
+@media screen and (max-width:350px){
+    .switch{
+        justify-content: center !important;
+    }
+    
+}
+
+@media screen and (max-width:100px){
+    .switch{
+        justify-content: center !important;
+    }
+    
 }
