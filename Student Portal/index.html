@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Get email and password from form inputs
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Dummy logic for redirecting based on email
+  // This is only checking if the email is 'admin@gmail.com'
+  if (email === 'admin@gmail.com') {
+    // Redirect to Admin Dashboard
+    window.location.href = 'Admin/admin.html';
+  } else {
+    // Redirect to Student Dashboard
+    window.location.href = 'Student/student.html';
+  }
+});
+
+  </script>
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
+
+

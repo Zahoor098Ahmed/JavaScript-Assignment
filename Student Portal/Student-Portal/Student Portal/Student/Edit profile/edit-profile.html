@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <div class="form-container">
+    <h2>Edit Profile</h2>
+    <form id="profileForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="cnic">CNIC</label>
+      <input type="text" id="cnic" name="cnic" required>
+
+      <button type="submit">Update Profile</button>
+    </form>
+  </div>
+
+  <!-- Firebase and Custom JS -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="firebase.js"></script> <!-- Firebase Config -->
+  <script src="edit-profile.js"></script> <!-- Your edit profile logic -->
+</body>
+</html>
+

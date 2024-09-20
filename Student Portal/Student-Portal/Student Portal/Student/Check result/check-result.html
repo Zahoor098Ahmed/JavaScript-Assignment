@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Result</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <div class="form-container">
+    <h2>Check Your Result</h2>
+    <form id="resultForm">
+      <label for="cnic">Enter CNIC</label>
+      <input type="text" id="cnic" name="cnic" placeholder="Enter your CNIC" required>
+      <button type="submit">Check Result</button>
+    </form>
+
+    <div id="resultContainer">
+      <!-- Results will be displayed here -->
+    </div>
+  </div>
+
+  <!-- Firebase and Custom JS -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="firebase.js"></script> <!-- Firebase Config -->
+  <script src="check-result.js"></script> <!-- Your check result logic -->
+</body>
+</html>
